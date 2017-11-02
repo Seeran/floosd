@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.foloosdubai"
-        version   = "1.1.7">
+        version   = "1.1.8">
 
     <name>فلوس دبي</name>
 
@@ -47,9 +47,9 @@
     <!-- Core plugins -->
     <!--<plugin name="cordova-plugin-battery-status" />-->
 	<plugin name="cordova-plugin-camera" >
-   <param name="CAMERA_USAGE_DESCRIPTION" value="We are using the Camera for something..." />
-   <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="We are using the Photo Library for something..." />
-</plugin>
+   <param name="CAMERA_USAGE_DESCRIPTION" value="التطبيق يستخدم الكاميرا لالتقاط الصور التي ترغب باضافتها للمواضيع" />
+   <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="التطبيق يستخدم مكتبة الصور للوصول للصور التي ترغب باضافتها للمواضيع" />
+	</plugin>
     <!--<plugin name="cordova-plugin-media-capture" />-->
     <!--<plugin name="cordova-plugin-console" />-->
     <!--<plugin name="cordova-plugin-contacts" />-->
