@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.foloosdubai"
-        version   = "1.0.8">
+        version   = "1.0.9">
 
     <name>فلوس دبي</name>
 
@@ -46,8 +46,6 @@
 
     <!-- Core plugins -->
     <!--<plugin name="cordova-plugin-battery-status" />-->
-	<plugin name="cordova-plugin-camera" />
-    <plugin name="cordova-plugin-media-capture" />
     <!--<plugin name="cordova-plugin-console" />-->
     <!--<plugin name="cordova-plugin-contacts" />-->
     <!--<plugin name="cordova-plugin-device" />-->
@@ -56,13 +54,10 @@
     <!--<plugin name="cordova-plugin-dialogs" />-->
     <!--<plugin name="cordova-plugin-file" />-->
     <!--<plugin name="cordova-plugin-file-transfer" />-->
-    <plugin name="cordova-plugin-geolocation" />
-    <plugin name="cordova-plugin-globalization" />
     <!--<plugin name="cordova-plugin-inappbrowser" />-->
     <!--<plugin name="cordova-plugin-media" />-->
     <!--<plugin name="cordova-plugin-network-information" />-->
     <!--<plugin name="cordova-plugin-splashscreen" />-->
-    <plugin name="cordova-plugin-vibration" />
     
 
     <!-- Third party plugins -->
