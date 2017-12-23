@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.foloosdubai"
-        version   = "1.2.1">
+        version   = "1.2.2">
 
     <name>فلوس دبي</name>
 
@@ -46,10 +46,7 @@
 
     <!-- Core plugins -->
     <!--<plugin name="cordova-plugin-battery-status" />-->
-	<plugin name="cordova-plugin-camera" >
-   <param name="CAMERA_USAGE_DESCRIPTION" value="التطبيق يستخدم الكاميرا لالتقاط الصور التي ترغب باضافتها للمواضيع" />
-   <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="التطبيق يستخدم مكتبة الصور للوصول للصور التي ترغب باضافتها للمواضيع" />
-	</plugin>
+	<plugin name="cordova-plugin-camera" ></plugin>
     <!--<plugin name="cordova-plugin-media-capture" />-->
     <!--<plugin name="cordova-plugin-console" />-->
     <!--<plugin name="cordova-plugin-contacts" />-->
@@ -74,7 +71,16 @@
         <plugin name="com.phonegap.plugins.barcodescanner" />
     -->
 
-	
+<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+    <string>التطبيق يمكن أن يستخدم الكاميرا لالتقاط الصور التي ترغب باضافتها للمواضيع</string>
+</edit-config>
+<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+    <string>التطبيق يمكن أن يستخدم مكتبة الصور للوصول للصور التي ترغب باضافتها للمواضيع</string>
+</edit-config>
+<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+    <string>التطبيق يمكن أن يستخدم مكتبة الصور لحفظ الصور التي ترغب باضافتها بحفظها</string>
+</edit-config>
+
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
